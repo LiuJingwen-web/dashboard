@@ -74,7 +74,7 @@ Average_H.update_layout(
 
 # Define the Dash app with Flask server
 app = dash.Dash(__name__, external_stylesheets=[dbc.themes.BOOTSTRAP])
-
+server=app.server
 # Define the layout
 app.layout = html.Div([
     html.H1(children='Unemployment Rates by Country', style={'textAlign': 'center'}),
